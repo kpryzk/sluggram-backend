@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for lib/util.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">lib</a> util.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">89.8% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>44/49</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>20/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">82.76% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>24/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">89.19% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>33/37</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// DEPENDENCIES
+import AWS from 'aws-sdk';
+import {extname} from 'path';
+import fs from 'fs-extra';
+&nbsp;
+const s3 = new AWS.S3();
+&nbsp;
+// INTERFACE
+export const partial = (fn, ...defaults) =&gt;
+  (...args) =&gt; fn(...defaults, ...args);
+&nbsp;
+export const partialRight = (fn, ...defaults) =&gt;
+  (...args) =&gt; fn(...args, ...defaults);
+&nbsp;
+export const compose = (...fns) =&gt;
+  (arg) =&gt; fns.reduce((result, next) =&gt; next(result), arg);
+&nbsp;
+export const promisify = (fn) =&gt; (...args) =&gt;
+  new Promise((resolve, reject) =&gt;
+    fn(...args, (err, data) =&gt; err ? reject(err) : resolve(data)));
+&nbsp;
+export const log = (...args) =&gt;
+  process.env.DEBUG === 'true' ?  console.log(...args): undefined;
+&nbsp;
+export const logError = (...args) =&gt;
+  process.env.DEBUG === 'true' ? console.error(...args) : undefined;
+&nbsp;
+export const daysToMilliseconds = (days) =&gt; days * 1000 * 60 * 60 * 24;
+&nbsp;
+export const map = <span class="fstat-no" title="function not covered" >(l</span>ist, cb) =&gt;
+<span class="cstat-no" title="statement not covered" >  Array.prototype.map.call(list, cb);</span>
+&nbsp;
+export const filter = <span class="fstat-no" title="function not covered" >(l</span>ist, cb) =&gt;
+<span class="cstat-no" title="statement not covered" >  Array.prototype.filter.call(list, cb);</span>
+&nbsp;
+export const reduce = <span class="fstat-no" title="function not covered" >(l</span>ist, ...args) =&gt;
+<span class="cstat-no" title="statement not covered" >  Array.prototype.reduce.apply(list, args);</span>
+&nbsp;
+export const each = (list, cb) =&gt;
+  Array.prototype.forEach.call(list, cb);
+&nbsp;
+export const removeMulterFile = (data) =&gt; fs.remove(data.path);
+export const removeMulterFiles = (list) =&gt; Promise.all(list.map(removeMulterFile));
+&nbsp;
+export const s3UploadMulterFileAndClean = (data) =&gt; {
+  return s3.upload({
+    ACL: 'public-read',
+    Bucket: process.env.AWS_BUCKET,
+    Key: `${data.filename}.${data.originalname}`,
+    Body: fs.createReadStream(data.path),
+  }).promise()
+  // allways remove file and either pass on failure or success
+    .catch(<span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >fs.remove(data.path).then(<span class="fstat-no" title="function not covered" >()</span> =&gt; {<span class="cstat-no" title="statement not covered" >throw err}</span>))</span>
+    .then(s3Data =&gt; fs.remove(data.path).then(() =&gt; s3Data));
+};
+&nbsp;
+export const pagerCreate = (model, populate='') =&gt; (req, query={}) =&gt; {
+  let offset = (Number(req.query.page) - 1) || 0;
+  let itemLimit = 100;
+  let route = `${process.env.API_URL}/${model.modelName}s?page=`;
+  return model.count()
+    .then(count =&gt; {
+      let remaining = count - offset * itemLimit;
+      return model.find(query)
+        .populate(populate)
+        .skip(offset &gt; 0 ? offset * itemLimit : 0)
+        .limit(itemLimit)
+        .then(profiles =&gt; ({
+          count: count,
+          data: profiles,
+          last: `${route}${Math.floor((count - 1) / itemLimit) + 1}`,
+          prev: offset &gt; 0 &amp;&amp; remaining &gt; 0  ? `${route}${offset}` : null,
+          next: offset &gt; -1 &amp;&amp; remaining &gt; itemLimit ? `${route}${offset + 2}` : null,
+        }));
+    });
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Oct 12 2017 15:08:43 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
